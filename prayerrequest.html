@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <title>prayer request</title>
+    
+    <link rel = " icon" href = "2.png" type = "image/x-icon" >
+    <style>.dropdown:hover .dropdown-menu {
+        display: block;
+      }</style>
+      <link rel="stylesheet" href="style.css"/>
+      <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+      <script src="https://cdn.tailwindcss.com"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <style>
+        .example {
+          line-height: 80px;
+          
+          display: inline-block;
+          vertical-align: middle;
+        }
+      </style>
+      <style>
+        #loader {
+            border: 12px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 12px solid #444444;
+            width: 70px;
+            height: 70px;
+            animation: spin 1s linear infinite;
+        }
+          
+        @keyframes spin {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+          
+        .center {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+  <div id="loader" class="center"></div>
+  <script>
+    document.onreadystatechange = function() {
+        if (document.readyState !== "complete") {
+            document.querySelector(
+              "body").style.visibility = "hidden";
+            document.querySelector(
+              "#loader").style.visibility = "visible";
+        } else {
+            document.querySelector(
+              "#loader").style.display = "none";
+            document.querySelector(
+              "body").style.visibility = "visible";
+        }
+    };
+</script>
+    	<!--Nav-->
+        <nav class="bg-gray-800 p-2 mt-0 fixed w-full z-10 top-0">
+            <div class="container mx-auto flex flex-wrap items-center">
+            <div class="flex w-full md:w-1/2 justify-center md:justify-start text-white font-medium">
+            <a class="text-white no-underline hover:text-white hover:no-underline" href="home.html">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="home.html">
+                  <div class="frame" style="height: 25px;">
+                  <img src="g.svg" alt="" width="90" height="90" class="d-inline-block align-text-top">
+                </div>
+                </a>
+              </div>
+              
+              <span class="text-3xl pl-5" ; vertical-align: middle><left> <span class="example">Gods Fire Fellowship Trust</span></left></span>
+            </a>
+                </div>
+          <div class="flex w-full pt-2 content-center justify-between md:w-1/2 md:justify-end">
+            <ul class="list-reset flex justify-between flex-1 md:flex-none items-center">
+              <li class="mr-3">
+              <a class="inline-block py-2 px-4 text-white no-underline" href="home.html">Home</a>
+              </li>
+              <li class="mr-3">
+                <a class="inline-block py-2 px-4 text-white no-underline" href="Aboutus.html">About Us</a>
+                </li>
+                <li class="mr-3">
+                  <a class="inline-block py-2 px-4 text-white no-underline" href="Sermon.html">Sermon</a>
+                  </li>
+                  <li class="mr-3">
+                    <a class="inline-block py-2 px-4 text-white no-underline" href="testimony.html">Testimony</a>
+                    </li>
+                    <li class="mr-3">
+                      <a class="inline-block py-2 px-4 text-white no-underline" href="contact.html">Contact</a>
+                      </li>
+                      <li class="mr-3">
+                        <a class="inline-block py-2 px-4 text-white no-underline" href="prayerrequest.html">Prayer request</a>
+                        </li>
+                        <div class="dropdown inline-block relative">
+                          <button class="bg-gray-300 text-gray-700 font-semibold py-2 px-4 rounded inline-flex items-center">
+                            <span class="mr-1">Seed /Offering /Tithe
+                            </span>
+                            <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
+                          </button>
+                          <ul class="dropdown-menu absolute hidden text-gray-700 pt-1">
+                            <li class=""><a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="seed.html">GPay /Paytm /PhonePe</a></li>
+                            <li class=""><a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="gateway.html">Debit card /PayPal /Visa</a></li>
+                            
+                          </ul>
+                        </div>
+                      
+                      </div><!--
+              <li class="mr-3">
+              <a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4" href="#">link</a>
+              </li>
+              <li class="mr-3">
+              <a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4" href="#">link</a>
+              </li>
+              <li class="mr-3">
+              <a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4" href="#">link</a>
+              </li>-->
+            </ul>
+          </div>
+            </div>
+        </nav><br><br><br>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <section class="text-gray-600 body-font relative">
+        <div class="container px-5 py-24 mx-auto">
+            <div class="flex flex-col text-center w-full mb-12">
+                <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Prayer Request</h1>
+                <p class="lg:w-2/3 mx-auto leading-relaxed text-base">If you would like to visit us, Please complete the questionnaire and submit in detail.<br>  All further correspondence with the Church regarding your visit will be done through Email / Phone call / WhatsApp. <br>Please Note that you must wait for confirmation of your visit  before making any travel arangements.</p>
+            </div>
+            <div class="lg:w-1/2 md:w-2/3 mx-auto">
+                <div class="flex flex-wrap -m-2">
+                    <div class="p-2 w-1/2">
+                        <div class="relative">
+                            <label for="name" class="leading-7 text-sm text-gray-600"><b>First Name ( पहला नाम )</b></label>
+                            <input type="text" id="name" name="name"
+                                class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                        </div>
+                    </div>
+                    <div class="p-2 w-1/2">
+                        <div class="relative">
+                            <label for="name" class="leading-7 text-sm text-gray-600"><b>Last Name ( अंतिम नाम )</b></label>
+                            <input type="text" id="name" name="name"
+                                class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                        </div>
+                    </div>
+                    <div class="p-2 w-1/2">
+                        <div class="relative">
+                            <label for="email" class="leading-7 text-sm text-gray-600"><b>Gender ( लिंग )</b></label><br>
+                            <div class="max-w-xs">
+                                <div
+                                        x-data="select({ data: { m: 'Male', f: 'Female', o: 'other' }, emptyOptionsMessage: 'No countries match your search.', name: 'country', placeholder: 'Select Gender' })"
+                                        x-init="init()"
+                                        @click.away="closeListbox()"
+                                        @keydown.escape="closeListbox()"
+                                        class="relative"
+                                >
+                                        <span class="inline-block w-full rounded-md shadow-sm">
+                                              <button
+                                                      x-ref="button"
+                                                      @click="toggleListboxVisibility()"
+                                                      :aria-expanded="open"
+                                                      aria-haspopup="listbox"
+                                                      class="relative z-0 w-full py-2 pl-3 pr-10 text-left transition duration-150 ease-in-out bg-white border border-gray-300 rounded-md cursor-default focus:outline-none focus:shadow-outline-blue focus:border-blue-300 sm:text-sm sm:leading-5"
+                                              >
+                                                    <span
+                                                            x-show="! open"
+                                                            x-text="value in options ? options[value] : placeholder"
+                                                            :class="{ 'text-gray-500': ! (value in options) }"
+                                                            class="block truncate"
+                                                    ></span>
+                        
+                                                    <input
+                                                            x-ref="search"
+                                                            x-show="open"
+                                                            x-model="search"
+                                                            @keydown.enter.stop.prevent="selectOption()"
+                                                            @keydown.arrow-up.prevent="focusPreviousOption()"
+                                                            @keydown.arrow-down.prevent="focusNextOption()"
+                                                            type="search"
+                                                            class="w-full h-full form-control focus:outline-none"
+                                                    />
+                        
+                                                    <span class="absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none">
+                                                        <svg class="w-5 h-5 text-gray-400" viewBox="0 0 20 20" fill="none" stroke="currentColor">
+                                                            <path d="M7 7l3-3 3 3m0 6l-3 3-3-3" stroke-width="1.5" stroke-linecap="round"
+                                                                  stroke-linejoin="round"></path>
+                                                        </svg>
+                                                    </span>
+                                              </button>
+                                        </span>
+                        
+                                    <div
+                                            x-show="open"
+                                            x-transition:leave="transition ease-in duration-100"
+                                            x-transition:leave-start="opacity-100"
+                                            x-transition:leave-end="opacity-0"
+                                            x-cloak
+                                            class="absolute z-10 w-full mt-1 bg-white rounded-md shadow-lg"
+                                    >
+                                        <ul
+                                                x-ref="listbox"
+                                                @keydown.enter.stop.prevent="selectOption()"
+                                                @keydown.arrow-up.prevent="focusPreviousOption()"
+                                                @keydown.arrow-down.prevent="focusNextOption()"
+                                                role="listbox"
+                                                :aria-activedescendant="focusedOptionIndex ? name + 'Option' + focusedOptionIndex : null"
+                                                tabindex="-1"
+                                                class="py-1 overflow-auto text-base leading-6 rounded-md shadow-xs max-h-60 focus:outline-none sm:text-sm sm:leading-5"
+                                        >
+                                            <template x-for="(key, index) in Object.keys(options)" :key="index">
+                                                <li
+                                                        :id="name + 'Option' + focusedOptionIndex"
+                                                        @click="selectOption()"
+                                                        @mouseenter="focusedOptionIndex = index"
+                                                        @mouseleave="focusedOptionIndex = null"
+                                                        role="option"
+                                                        :aria-selected="focusedOptionIndex === index"
+                                                        :class="{ 'text-white bg-indigo-600': index === focusedOptionIndex, 'text-gray-900': index !== focusedOptionIndex }"
+                                                        class="relative py-2 pl-3 text-gray-900 cursor-default select-none pr-9"
+                                                >
+                                                        <span x-text="Object.values(options)[index]"
+                                                              :class="{ 'font-semibold': index === focusedOptionIndex, 'font-normal': index !== focusedOptionIndex }"
+                                                              class="block font-normal truncate"
+                                                        ></span>
+                        
+                                                    <span
+                                                            x-show="key === value"
+                                                            :class="{ 'text-white': index === focusedOptionIndex, 'text-indigo-600': index !== focusedOptionIndex }"
+                                                            class="absolute inset-y-0 right-0 flex items-center pr-4 text-indigo-600"
+                                                    >
+                                                            <svg class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+                                                                <path fill-rule="evenodd"
+                                                                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                                                      clip-rule="evenodd"/>
+                                                            </svg>
+                                                        </span>
+                                                </li>
+                                            </template>
+                        
+                                            <div
+                                                    x-show="! Object.keys(options).length"
+                                                    x-text="emptyOptionsMessage"
+                                                    class="px-3 py-2 text-gray-900 cursor-default select-none"></div>
+                                        </ul>
+                                    </div>
+                                </div>
+                        
+                                <script>
+                                    function select(config) {
+                                        return {
+                                            data: config.data,
+                        
+                                            emptyOptionsMessage: config.emptyOptionsMessage ?? 'No results match your search.',
+                        
+                                            focusedOptionIndex: null,
+                        
+                                            name: config.name,
+                        
+                                            open: false,
+                        
+                                            options: {},
+                        
+                                            placeholder: config.placeholder ?? 'Select an option',
+                        
+                                            search: '',
+                        
+                                            value: config.value,
+                        
+                                            closeListbox: function () {
+                                                this.open = false
+                        
+                                                this.focusedOptionIndex = null
+                        
+                                                this.search = ''
+                                            },
+                        
+                                            focusNextOption: function () {
+                                                if (this.focusedOptionIndex === null) return this.focusedOptionIndex = Object.keys(this.options).length - 1
+                        
+                                                if (this.focusedOptionIndex + 1 >= Object.keys(this.options).length) return
+                        
+                                                this.focusedOptionIndex++
+                        
+                                                this.$refs.listbox.children[this.focusedOptionIndex].scrollIntoView({
+                                                    block: "center",
+                                                })
+                                            },
+                        
+                                            focusPreviousOption: function () {
+                                                if (this.focusedOptionIndex === null) return this.focusedOptionIndex = 0
+                        
+                                                if (this.focusedOptionIndex <= 0) return
+                        
+                                                this.focusedOptionIndex--
+                        
+                                                this.$refs.listbox.children[this.focusedOptionIndex].scrollIntoView({
+                                                    block: "center",
+                                                })
+                                            },
+                        
+                                            init: function () {
+                                                this.options = this.data
+                        
+                                                if (!(this.value in this.options)) this.value = null
+                        
+                                                this.$watch('search', ((value) => {
+                                                    if (!this.open || !value) return this.options = this.data
+                        
+                                                    this.options = Object.keys(this.data)
+                                                        .filter((key) => this.data[key].toLowerCase().includes(value.toLowerCase()))
+                                                        .reduce((options, key) => {
+                                                            options[key] = this.data[key]
+                                                            return options
+                                                        }, {})
+                                                }))
+                                            },
+                        
+                                            selectOption: function () {
+                                                if (!this.open) return this.toggleListboxVisibility()
+                        
+                                                this.value = Object.keys(this.options)[this.focusedOptionIndex]
+                        
+                                                this.closeListbox()
+                                            },
+                        
+                                            toggleListboxVisibility: function () {
+                                                if (this.open) return this.closeListbox()
+                        
+                                                this.focusedOptionIndex = Object.keys(this.options).indexOf(this.value)
+                        
+                                                if (this.focusedOptionIndex < 0) this.focusedOptionIndex = 0
+                        
+                                                this.open = true
+                        
+                                                this.$nextTick(() => {
+                                                    this.$refs.search.focus()
+                        
+                                                    this.$refs.listbox.children[this.focusedOptionIndex].scrollIntoView({
+                                                        block: "center"
+                                                    })
+                                                })
+                                            },
+                                        }
+                                    }
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="p-2 w-1/2">
+                        <div class="relative">
+                            <label for="email" class="leading-7 text-sm text-gray-600"><b>Age ( आयु )</b></label>
+                            <input type="email" id="email" name="email"
+                                class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                        </div>
+                    </div>
+                    <div class="p-2 w-1/2">
+                        <div class="relative">
+                            <label for="email" class="leading-7 text-sm text-gray-600"><b>Nationality ( राष्ट्रीयता )</b></label>
+                            <input type="email" id="email" name="email"
+                                class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                        </div>
+                    </div>
+                    <div class="p-2 w-1/2">
+                        <div class="relative">
+                            <label for="email" class="leading-7 text-sm text-gray-600"><b>Nationality ( राष्ट्रीयता )</b></label>
+                            <input type="email" id="email" name="email"
+                                class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                        </div>
+                    </div>
+                    <div class="p-2 w-1/2">
+                        <div class="relative">
+                            <label for="email" class="leading-7 text-sm text-gray-600"><b>Your Email ( ई-मेल )</b></label>
+                            <input type="email" id="email" name="email"
+                                class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                        </div>
+                    </div>
+                    <div class="p-2 w-1/2">
+                        <div class="relative">
+                            <label for="email" class="leading-7 text-sm text-gray-600"><b>Phone ( फ़ोन )</b></label>
+                            <input type="email" id="email" name="email"
+                                class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                        </div>
+                    </div>
+                    <div class="p-2 w-1/2">
+                        <div class="relative">
+                            <label for="email" class="leading-7 text-sm text-gray-600"><b>Profession ( व्यवसाय )</b></label>
+                            <input type="email" id="email" name="email"
+                                class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                        </div>
+                    </div>
+                    <div class="p-2 w-1/2">
+                        <div class="relative">
+                            <label for="email" class="leading-7 text-sm text-gray-600"><b>Address ( पता )</b></label>
+                            <input type="email" id="email" name="email"
+                                class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                        </div>
+                    </div>
+                    <div class="p-2 w-1/2">
+                        <div class="relative">
+                            <label for="email" class="leading-7 text-sm text-gray-600"><b>Relatives Name ( रिश्तेदार का नाम )</b></label>
+                            <input type="email" id="email" name="email"
+                                class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                        </div>
+                    </div>
+                    <div class="p-2 w-1/2">
+                        <div class="relative">
+                            <label for="email" class="leading-7 text-sm text-gray-600"><b>Relatives Phone ( रिश्तेदार का फोन )</b></label>
+                            <input type="email" id="email" name="email"
+                                class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                        </div>
+                    </div>
+                    <div class="p-2 w-1/2">
+                        <div class="relative">
+                            <label for="email" class="leading-7 text-sm text-gray-600"><b>Relatives Email ( रिश्तेदार का ई-मेल )</b></label>
+                            <input type="email" id="email" name="email"
+                                class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                        </div>
+                    </div>
+
+                    <div class="p-2 w-full">
+                        <div class="relative">
+                            <label for="message" class="leading-7 text-sm text-gray-600"><b>Please state the nature of the problem you are having and all the symptoms. Please specify in detail <br>( कृपया आपको होने वाली समस्या और सभी लक्षणों की प्रकृति के बारे में बताएं। कृपया विस्तार से बताएं )</b></label>
+                            <textarea id="message" name="message"
+                                class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+                        </div>
+                    </div>
+                    <div class="p-2 w-full">
+                        <div class="relative">
+                            <label for="message" class="leading-7 text-sm text-gray-600"><b>For how long have you been experiencing this problem ?<br> (  आप कब से इस समस्या का सामना कर रहे हैं ?  )</b></label>
+                            <textarea id="message" name="message"
+                                class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+                        </div>
+                    </div>
+                    <div class="p-2 w-full">
+                      <div class="relative">
+                          <label for="message" class="leading-7 text-sm text-gray-600"><b>Have you ever been hospitalized for surgery/ treatment? If so for how long ? <br> ( क्या आप कभी अस्पताल में भर्ती हुए हैं सर्जरी या फिर उपचार के लिए ? अगर हाँ, तो कितने समय तक ? )</b></label>
+                          <textarea id="message" name="message"
+                              class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+                      </div>
+                  </div>
+                  <div class="p-2 w-full">
+                    <div class="relative">
+                        <label for="message" class="leading-7 text-sm text-gray-600"><b>How the problem /condition has affected your daily living ?<br> समस्या / स्थिति ने आपके दैनिक जीवन को कैसे प्रभावित किया है? </b></label>
+                        <textarea id="message" name="message"
+                            class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+                    </div>
+                </div>
+                <div class="p-2 w-full">
+                  <div class="relative">
+                      <label for="message" class="leading-7 text-sm text-gray-600"><b>Are you using any medical device (Brace, Crutch, wheel chair ,Stick etc )for support.<br> (क्या आप किसी चिकित्सा उपकरण का उपयोग कर रहे हैं सहायता के लिए ( ब्रेस, बैसाखी, व्हीलचेयर, छड़ी इत्यादि )</b></label>
+                      <textarea id="message" name="message"
+                          class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+                  </div>
+              </div>
+              <div class="p-2 w-full">
+                <div class="relative">
+                    <label for="message" class="leading-7 text-sm text-gray-600"><b>Your current Full Photograph*. <br> ( आपकी वर्तमान की पूरी फ़ोटोग्राफ़ )</b></label>
+                    <textarea id="message" name="message"
+                        class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+                </div>
+            </div>
+            <div class="p-2 w-full">
+              <div class="relative">
+                  <label for="message" class="leading-7 text-sm text-gray-600"><b>How did you hear about us (Word of mouth / Youtube / Facebook / Website) ? <br> ( आपको हमारे बारे में कैसे पता चला (किसी व्यक्ति  के द्वारा / फेसबुक / यूट्यूब / वेबसाइट )?)</b></label>
+                  <textarea id="message" name="message"
+                      class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+              </div>
+          </div>
+          <div class="p-2 w-full">
+            <div class="relative">
+                <label for="message" class="leading-7 text-sm text-gray-600"><b>Comments  <br> ( टिप्पणी )</b></label>
+                <textarea id="message" name="message"
+                    class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+            </div>
+        </div>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <center><button class="bg-transparent hover:bg-blue-500 text-black-700 font-semibold hover:text-white py-2 px-8 border border-black-500 hover:border-transparent rounded">
+                        <a href="Reply.html"><i class="fa fa-paper-plane" style="font-size:24px"></i>&nbsp;&nbsp;Submit</a>
+                      </button> </center></a>
+                        
+                       
+                    
+                    <div class="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
+                        
+                        <span class="inline-flex">
+                            <a class="text-gray-500">
+                                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    class="w-5 h-5" viewBox="0 0 24 24">
+                                    <a href="https://www.facebook.com/Gods-FIRE-Fellowship-296377880379740/">
+                                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z">
+                                        </path>
+                                    </a>
+                                </svg>
+                            </a>
+                            <a class="ml-4 text-gray-500">
+                                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    class="w-5 h-5" viewBox="0 0 24 24">
+                                    <a href="https://www.twitter.com/pspradeeprao1/">
+                                    <path
+                                        d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                                    </path></a>
+                                </svg>
+                            </a>
+                            <a class="ml-4 text-gray-500">
+                                <svg fill="none" stroke="grey" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                                    <a href="https://www.instagram.com/ps.pradeeprao/">
+                                    <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path></a>
+                                </svg>
+                            </a>
+                           
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="bg-fixed background-attachment: fixed;" style="background-image: url(bg.jpeg)">
+        <footer class="text-gray-600 body-font">
+          <div class="container px-5 py-24 mx-auto">
+            <div class="flex flex-wrap md:text-left text-center -mb-10 -mx-4">
+             
+              <div class="lg:w-1/6 md:w-1/2 w-full px-4">
+                <h1 style="color:white;">IMPORTANT LINKS</h1><br>
+                <nav class="list-none mb-10">
+                  <li>
+                    <a style="color:white;" href="Contact.html">Contact Us</a>
+                  </li>
+                  <li>
+                    <a style="color:white;"href="prayerrequest.html">Prayer Request</a>
+                  </li>
+                  <li>
+                    <a style="color:white;"href="FAQ.html">FAQs</a>
+                  </li>
+                 
+                  <li>
+                    <a style="color:white;"href="Sermon.html">Sermons</a>
+                  </li>
+                  <li>
+                    <a style="color:white;"href="testimony.html">Testimonials</a>
+                  </li>
+                </nav>
+              </div>
+             
+              <div class="lg:w-1/6 md:w-1/2 w-full px-4">
+                <h1 style="color:white;"> CONTACT US</h1><br>
+                <nav class="list-none mb-10">
+                  <li>
+                    <a style="color:white;" href="https://wa.me/917307798110"><i class="fa fa-whatsapp"style=" font-size: 24px "></i>  WhatsApp</a>
+                  </li>
+                  <li>
+                    <a style="color:white;" href="https://www.facebook.com/Gods-FIRE-Fellowship-296377880379740/"><i class="fa fa-facebook-f" style=" font-size: 24px "></i>           Facebook</a>
+                  </li>
+                  <li>
+                    <a style="color:white;" href="mailto: godsfirefellowshiptrust@gmail.com "><i class="fa fa-envelope"style="font-size:24px "></i> Mail</a>
+                  </li>
+                  
+                  
+                </nav>
+              </div>
+              <div class="lg:w-6/6 md:w-1/2 w-full px-4">
+                <h1 style="color:white;text-align:center;font-size:130%;">ABOUT THE CHURCH</h1><br>
+                <nav class="list-none mb-10">
+                  <li>
+                    <a style="color:white;" href="Contact.html"><p>The God's Fire Fellowship Trust Church is a living church full of signs and wonders and the holy fire of our lord and savior Jesus Christ. Pastor Pradeep Rao is the senior pastor and overseer of The God's Fire Fellowship Trust Church.The church has now become a congregation of hundreds of people.</p></a>
+                  </li></nav>
+                </div>
+                <p style="color:white;">You can now get our church app  on google play store.</p><p>&emsp;</p><p>&emsp;</p><br>
+                <button
+                class="bg-gray-100 inline-flex py-3 px-5 rounded-lg items-center hover:bg-gray-200 focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6"
+                    viewBox="0 0 512 512">
+                    <path
+                        d="M99.617 8.057a50.191 50.191 0 00-38.815-6.713l230.932 230.933 74.846-74.846L99.617 8.057zM32.139 20.116c-6.441 8.563-10.148 19.077-10.148 30.199v411.358c0 11.123 3.708 21.636 10.148 30.199l235.877-235.877L32.139 20.116zM464.261 212.087l-67.266-37.637-81.544 81.544 81.548 81.548 67.273-37.64c16.117-9.03 25.738-25.442 25.738-43.908s-9.621-34.877-25.749-43.907zM291.733 279.711L60.815 510.629c3.786.891 7.639 1.371 11.492 1.371a50.275 50.275 0 0027.31-8.07l266.965-149.372-74.849-74.847z">
+                    </path>
+                </svg>
+                <span class="ml-4 flex items-start flex-col leading-none">
+                  <a href="https://play.google.com/store/apps/details?id=com.microsoft.office.officehubrow&hl=en_IN&gl=US">
+                    <span class="text-xs text-gray-600 mb-1">GET IT ON</span>
+                    <span class="title-font font-medium"><a href="https://play.google.com/store/apps/details?id=com.microsoft.office.officehubrow&hl=en_IN&gl=US">Google Play</a></span>
+                </span>
+            </button>
+            </div></div>
+      
+        
+        <div class="bg-gray-100">
+          <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+            <p class="text-gray-500 text-sm text-center sm:text-left">© Copyright 2021 Gods Fire Fellowship Trust —
+              <a href="https://www.twitter.com/pspradeeprao1/" class="text-gray-600 ml-1" target="_blank" rel="noopener noreferrer">@Ps
+                Pradeep Rao</a>
+            </p>
+            <span class="sm:ml-auto sm:mt-0 mt-2 sm:w-auto w-full sm:text-left text-center text-gray-500 text-sm">
+              <span class="inline-flex lg:ml-auto lg:mt-0 mt-6 w-full justify-center md:justify-start md:w-auto">
+              
+                <a href="https://www.facebook.com/Gods-FIRE-Fellowship-296377880379740/">
+                  <i class="fa fa-facebook-f" style=" font-size: 24px "></i>
+                </a>
+              
+                <p>&emsp;</p>
+                <a href="https://www.twitter.com/pspradeeprao1/">
+                  <i class="fa fa-twitter"style=" font-size: 24px "></i>
+            </a>
+            <p>&emsp;</p>
+              
+              <a href="https://www.instagram.com/ps.pradeeprao/">
+                <i class="fa fa-instagram" style=" font-size: 24px "></i>
+              </a>
+              <p>&emsp;</p>
+           <a href="https://www.youtube.com/channel/UCnwzgxJAG_qyxyspAVmxPmA"> <i class="fa fa-youtube-play"style=" font-size: 24px "></i></a>
+           <p>&emsp;</p>
+           <a href="https://wa.me/917307798110"> <i style=" font-size: 24px " class="fa fa-whatsapp"></i></a>
+           <p>&emsp;</p>
+           <a  href="mailto: godsfirefellowshiptrust@gmail.com "   target="_blank"><i class="fa fa-envelope"style="font-size:24px "></i></a>
+          </span>
+        </div>
+      </div>
+            </span>
+          </div>
+        </div>
+        
+        </footer>
+      </div>
+</body>
+
+</html>

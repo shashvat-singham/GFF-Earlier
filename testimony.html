@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <title>Testimony</title>
+  <style>.dropdown:hover .dropdown-menu {
+    display: block;
+  }</style><link rel = " icon" href = "2.png" type = "image/x-icon" >
+  <style>
+    .example {
+      line-height: 80px;
+      
+      display: inline-block;
+      vertical-align: middle;
+    }
+  </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      #loader {
+          border: 12px solid #f3f3f3;
+          border-radius: 50%;
+          border-top: 12px solid #444444;
+          width: 70px;
+          height: 70px;
+          animation: spin 1s linear infinite;
+      }
+        
+      @keyframes spin {
+          100% {
+              transform: rotate(360deg);
+          }
+      }
+        
+      .center {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          margin: auto;
+      }
+  </style>
+</head>
+
+<body>
+  <div id="loader" class="center"></div>
+  <script>
+    document.onreadystatechange = function() {
+        if (document.readyState !== "complete") {
+            document.querySelector(
+              "body").style.visibility = "hidden";
+            document.querySelector(
+              "#loader").style.visibility = "visible";
+        } else {
+            document.querySelector(
+              "#loader").style.display = "none";
+            document.querySelector(
+              "body").style.visibility = "visible";
+        }
+    };
+</script>
+  	<!--Nav-->
+    <nav class="bg-gray-800 p-2 mt-0 fixed w-full z-10 top-0">
+      <div class="container mx-auto flex flex-wrap items-center">
+      <div class="flex w-full md:w-1/2 justify-center md:justify-start text-white font-medium">
+      <a class="text-white no-underline hover:text-white hover:no-underline" href="home.html">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="home.html">
+            <div class="frame" style="height: 25px;">
+            <img src="g.svg" alt="" width="90" height="90" class="d-inline-block align-text-top">
+          </div>
+          </a>
+        </div>
+        
+        <span class="text-3xl pl-5" ; vertical-align: middle><left> <span class="example">Gods Fire Fellowship Trust</span></left></span>
+      </a>
+          </div>
+    <div class="flex w-full pt-2 content-center justify-between md:w-1/2 md:justify-end">
+      <ul class="list-reset flex justify-between flex-1 md:flex-none items-center">
+        <li class="mr-3">
+        <a class="inline-block py-2 px-4 text-white no-underline" href="home.html">Home</a>
+        </li>
+        <li class="mr-3">
+          <a class="inline-block py-2 px-4 text-white no-underline" href="Aboutus.html">About Us</a>
+          </li>
+          <li class="mr-3">
+            <a class="inline-block py-2 px-4 text-white no-underline" href="Sermon.html">Sermon</a>
+            </li>
+            <li class="mr-3">
+              <a class="inline-block py-2 px-4 text-white no-underline" href="testimony.html">Testimony</a>
+              </li>
+              <li class="mr-3">
+                <a class="inline-block py-2 px-4 text-white no-underline" href="contact.html">Contact</a>
+                </li>
+                <li class="mr-3">
+                  <a class="inline-block py-2 px-4 text-white no-underline" href="prayerrequest.html">Prayer request</a>
+                  </li>
+                  <div class="dropdown inline-block relative">
+                    <button class="bg-gray-300 text-gray-700 font-semibold py-2 px-4 rounded inline-flex items-center">
+                      <span class="mr-1">Seed /offering /Tithe
+                      </span>
+                      <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
+                    </button>
+                    <ul class="dropdown-menu absolute hidden text-gray-700 pt-1">
+                      <li class=""><a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="seed.html">GPay /Paytm /PhonePe</a></li>
+                      <li class=""><a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="gateway.html">Debit card /PayPal /Visa</a></li>
+                      
+                    </ul>
+                  </div>
+                
+                </div><!--
+        <li class="mr-3">
+        <a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4" href="#">link</a>
+        </li>
+        <li class="mr-3">
+        <a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4" href="#">link</a>
+        </li>
+        <li class="mr-3">
+        <a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4" href="#">link</a>
+        </li>-->
+      </ul>
+    </div>
+      </div>
+  </nav><br>
+  <section class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-col">
+        <div class="h-1 bg-gray-200 rounded overflow-hidden">
+          <div class="w-24 h-full bg-indigo-500"></div>
+        </div>
+        <div class="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
+          <h1 class="sm:w-2/5 text-gray-900 font-medium title-font text-2xl mb-2 sm:mb-0">Testimonies</h1>
+          <p class="sm:w-3/5 leading-relaxed text-base sm:pl-10 pl-0"></p>
+        </div>
+        <h2 class="text-xl font-medium title-font text-gray-900 mt-5">I will also speak of Your testimonies before kings
+          And shall not be ashamed. <br>Psalm 119:46 </br></h2>
+        </p>
+      </div>
+    </div>
+    <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
+      <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+        <div class="rounded-lg h-64 overflow-hidden">
+          <div class="aspect-w-24 aspect-h-35">
+            <iframe src="https://www.youtube.com/embed/pc8r-UrwCkI?rel=0&html5=1&vq=hd1080" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+        <h2 class="text-xl font-medium title-font text-gray-900 mt-5">Healing from AIDS</h2>
+        <p class="text-base leading-relaxed mt-2">Swag shoivdigoitch literally meditation subway tile tumblr
+          cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.</p>
+        <a class="text-indigo-500 inline-flex items-center mt-3">
+          
+        </a>
+      </div>
+      <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+        <div class="rounded-lg h-64 overflow-hidden">
+          <div class="aspect-w-24 aspect-h-35">
+            <iframe src="https://www.youtube.com/embed/pc8r-UrwCkI?rel=0&html5=1&vq=hd1080" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+        <h2 class="text-xl font-medium title-font text-gray-900 mt-5">Healing from Cancer</h2>
+        <p class="text-base leading-relaxed mt-2">Swag shoivdigoitch literally meditation subway tile tumblr
+          cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.</p>
+        <a class="text-indigo-500 inline-flex items-center mt-3">
+          
+        </a>
+      </div>
+      <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+        <div class="rounded-lg h-64 overflow-hidden">
+          <div class="aspect-w-24 aspect-h-35">
+            <iframe src="https://www.youtube.com/embed/pc8r-UrwCkI?rel=0&html5=1&vq=hd1080" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+        <h2 class="text-xl font-medium title-font text-gray-900 mt-5">Healing from leprosy</h2>
+        <p class="text-base leading-relaxed mt-2">Swag shoivdigoitch literally meditation subway tile tumblr
+          cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.</p>
+        <a class="text-indigo-500 inline-flex items-center mt-3">
+          
+        </a><br><br>
+      </div>
+    </div>
+    </div>
+  </section>
+  <div class="bg-fixed background-attachment: fixed;" style="background-image: url(bg.jpeg)">
+    <footer class="text-gray-600 body-font">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-wrap md:text-left text-center -mb-10 -mx-4">
+         
+          <div class="lg:w-1/6 md:w-1/2 w-full px-4">
+            <h1 style="color:white;">IMPORTANT LINKS</h1><br>
+            <nav class="list-none mb-10">
+              <li>
+                <a style="color:white;" href="Contact.html">Contact Us</a>
+              </li>
+              <li>
+                <a style="color:white;"href="prayerrequest.html">Prayer Request</a>
+              </li>
+              <li>
+                <a style="color:white;"href="FAQ.html">FAQs</a>
+              </li>
+             
+              <li>
+                <a style="color:white;"href="Sermon.html">Sermons</a>
+              </li>
+              <li>
+                <a style="color:white;"href="testimony.html">Testimonials</a>
+              </li>
+            </nav>
+          </div>
+          <div class="lg:w-1/6 md:w-1/2 w-full px-4">
+            <h1 style="color:white;">SIMPLE WAYS TO DONATE</h1><br>
+            <nav class="list-none mb-10">
+              <li>
+                <a style="color:white;" href="seed.html">UPI / paytm / Google pay</a>
+              </li>
+              <li>
+                <a style="color:white;" href="gateway.html">Visa / paypal / Debitcard</a>
+              </li>
+            </nav>
+          </div>
+          <div class="lg:w-1/6 md:w-1/2 w-full px-4">
+            <h1 style="color:white;">SIMPLE WAYS TO CONTACT US</h1><br>
+            <nav class="list-none mb-10">
+              <li>
+                <a style="color:white;" href="https://wa.me/917307798110"><i class="fa fa-whatsapp"style=" font-size: 24px "></i>  WhatsApp</a>
+              </li>
+              <li>
+                <a style="color:white;" href="https://www.facebook.com/Gods-FIRE-Fellowship-296377880379740/"><i class="fa fa-facebook-f" style=" font-size: 24px "></i>           Facebook</a>
+              </li>
+              <li>
+                <a style="color:white;" href="mailto: godsfirefellowshiptrust@gmail.com "><i class="fa fa-envelope"style="font-size:24px "></i> Mail</a>
+              </li>
+              
+              
+            </nav>
+          </div>
+          <div class="lg:w-6/6 md:w-1/2 w-full px-4">
+            <h1 style="color:white;text-align:center;font-size:130%;">ABOUT THE CHURCH</h1><br>
+            <nav class="list-none mb-10">
+              <li>
+                <a style="color:white;" href="Contact.html"><p>The God's Fire Fellowship Trust Church is a living church full of signs and wonders and the holy fire of our lord and savior Jesus Christ. Pastor Pradeep Rao is the senior pastor and overseer of The God's Fire Fellowship Trust Church.The church has now become a congregation of hundreds of people.</p></a>
+              </li></nav>
+            </div>
+            <p style="color:white;">You can now get our church app  on google play store.</p><p>&emsp;</p><p>&emsp;</p><br>
+            <button
+            class="bg-gray-100 inline-flex py-3 px-5 rounded-lg items-center hover:bg-gray-200 focus:outline-none">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6"
+                viewBox="0 0 512 512">
+                <path
+                    d="M99.617 8.057a50.191 50.191 0 00-38.815-6.713l230.932 230.933 74.846-74.846L99.617 8.057zM32.139 20.116c-6.441 8.563-10.148 19.077-10.148 30.199v411.358c0 11.123 3.708 21.636 10.148 30.199l235.877-235.877L32.139 20.116zM464.261 212.087l-67.266-37.637-81.544 81.544 81.548 81.548 67.273-37.64c16.117-9.03 25.738-25.442 25.738-43.908s-9.621-34.877-25.749-43.907zM291.733 279.711L60.815 510.629c3.786.891 7.639 1.371 11.492 1.371a50.275 50.275 0 0027.31-8.07l266.965-149.372-74.849-74.847z">
+                </path>
+            </svg>
+            <span class="ml-4 flex items-start flex-col leading-none">
+              <a href="https://play.google.com/store/apps/details?id=com.microsoft.office.officehubrow&hl=en_IN&gl=US">
+                <span class="text-xs text-gray-600 mb-1">GET IT ON</span>
+                <span class="title-font font-medium"><a href="https://play.google.com/store/apps/details?id=com.microsoft.office.officehubrow&hl=en_IN&gl=US">Google Play</a></span>
+            </span>
+        </button>
+        </div></div>
+  
+    
+    <div class="bg-gray-100">
+      <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+        <p class="text-gray-500 text-sm text-center sm:text-left">© Copyright 2021 Gods Fire Fellowship Trust —
+          <a href="https://www.twitter.com/pspradeeprao1/" class="text-gray-600 ml-1" target="_blank" rel="noopener noreferrer">@Ps
+            Pradeep Rao</a>
+        </p>
+        <span class="sm:ml-auto sm:mt-0 mt-2 sm:w-auto w-full sm:text-left text-center text-gray-500 text-sm">
+          <span class="inline-flex lg:ml-auto lg:mt-0 mt-6 w-full justify-center md:justify-start md:w-auto">
+          
+            <a href="https://www.facebook.com/Gods-FIRE-Fellowship-296377880379740/">
+              <i class="fa fa-facebook-f" style=" font-size: 24px "></i>
+            </a>
+          
+            <p>&emsp;</p>
+            <a href="https://www.twitter.com/pspradeeprao1/">
+              <i class="fa fa-twitter"style=" font-size: 24px "></i>
+        </a>
+        <p>&emsp;</p>
+          
+          <a href="https://www.instagram.com/ps.pradeeprao/">
+            <i class="fa fa-instagram" style=" font-size: 24px "></i>
+          </a>
+          <p>&emsp;</p>
+       <a href="https://www.youtube.com/channel/UCnwzgxJAG_qyxyspAVmxPmA"> <i class="fa fa-youtube-play"style=" font-size: 24px "></i></a>
+       <p>&emsp;</p>
+       <a href="https://wa.me/917307798110"> <i style=" font-size: 24px " class="fa fa-whatsapp"></i></a>
+       <p>&emsp;</p>
+       <a  href="mailto: godsfirefellowshiptrust@gmail.com "   target="_blank"><i class="fa fa-envelope"style="font-size:24px "></i></a>
+      </span>
+    </div>
+  </div>
+        </span>
+      </div>
+    </div>
+    
+    </footer>
+  </div>
+</body>
+
+</html>

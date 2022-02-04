@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Seed</title>
+  
+  <link rel="stylesheet" href="style.css">
+  <link rel = " icon" href = "2.png" type = "image/x-icon" >
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    #loader {
+        border: 12px solid #f3f3f3;
+        border-radius: 50%;
+        border-top: 12px solid #444444;
+        width: 70px;
+        height: 70px;
+        animation: spin 1s linear infinite;
+    }
+      
+    @keyframes spin {
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+      
+    .center {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+</style>
+</head>
+<body>
+  
+  <div id="loader" class="center"></div>
+  <script>
+    document.onreadystatechange = function() {
+        if (document.readyState !== "complete") {
+            document.querySelector(
+              "body").style.visibility = "hidden";
+            document.querySelector(
+              "#loader").style.visibility = "visible";
+        } else {
+            document.querySelector(
+              "#loader").style.display = "none";
+            document.querySelector(
+              "body").style.visibility = "visible";
+        }
+    };
+</script>
+<!-- partial:index.partial.html -->
+<div class="mainscreen">
+    <!-- <img src="https://image.freepik.com/free-vector/purple-background-with-neon-frame_52683-34124.jpg"  class="bgimg " alt="">--> 
+      <div class="card">
+        <div class="leftside">
+          <img
+            src="wall.jpg"
+            class="product"
+            alt="Grain"
+          />
+        </div>
+        <div class="rightside">
+          <form action="">
+            <h1>God's Fire Fellowship Trust</h1>
+            <h2>Payment Information</h2>
+            <p>Cardholder Name</p>
+            <input type="text" class="inputbox" name="name" required />
+            <p>Card Number</p>
+            <input type="number" class="inputbox" name="card_number" id="card_number" required />
+            <p>Amount <i class="fa fa-rupee-sign"></i></p>
+            <input type="number" class="inputbox" name="card_number" id="card_number" required />
+
+            <p>Card Type&nbsp;&nbsp;<i class="fa fa-credit-card"></i></p>
+            <select class="inputbox" name="card_type" id="card_type" required>
+              <option value="">--Select a Card Type--</option>
+              <option value="Visa">Visa</option>
+              <option value="RuPay">RuPay </option>
+              <option value="Paypal">Paypal</option>
+              <option value="MasterCard">Master Card</option>
+              <option value="DebitCard">Debit Card</option>
+            </select>
+<div class="expcvv">
+
+            <p class="expcvv_text">Expiry</p>
+            <input type="date" class="inputbox" name="exp_date" id="exp_date" required />
+
+            <p class="expcvv_text2">CVV</p>
+            <input type="password" class="inputbox" name="cvv" id="cvv" required />
+        </div>
+            <p></p>
+            <!--<div class="g-recaptcha" data-sitekey="6LcePAATAAAAAGPRWgx90814DTjgt5sXnNbV5WaW"></div>-->
+            <button type="submit" class="button"><a href="payment.html">Proceed</a></button>
+            <script src='https://www.google.com/recaptcha/api.js'></script>
+          </form>
+        </div>
+      </div>
+    </div>
+<!-- partial -->
+  
+</body>
+</html>

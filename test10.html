@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+     
+     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+   
+     <link href="https://unpkg.com/tailwindcss@1.2.0/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+    width: 100%;
+    margin: 30px;
+  }
+  </style>
+</head>
+<body>
+    <nav class="bg-gray-800 p-2 mt-0 fixed w-full z-10 top-0">
+        <div class="container mx-auto flex flex-wrap items-center">
+          <div class="flex w-full md:w-1/2 justify-center md:justify-start text-white font-medium">
+            <a class="text-white no-underline hover:text-white hover:no-underline" href="home.html">
+              <span class="text-2xl pl-2"><i class="em em-grinning"></i> Gods Fire Fellowship Trust</span>
+            </a>
+          </div>
+          <div class="flex w-full pt-2 content-center justify-between md:w-1/2 md:justify-end">
+            <ul class="list-reset flex justify-between flex-1 md:flex-none items-center">
+              <li class="mr-3">
+                <a class="inline-block py-2 px-4 text-white no-underline" href="home.html">Home</a>
+              </li>
+              <li class="mr-3">
+                <a class="inline-block py-2 px-4 text-white no-underline" href="Aboutus.html">About Us</a>
+              </li>
+              <li class="mr-3">
+                <a class="inline-block py-2 px-4 text-white no-underline" href="Sermon.html">Sermon</a>
+              </li>
+              <li class="mr-3">
+                <a class="inline-block py-2 px-4 text-white no-underline" href="testimony.html">Testimony</a>
+              </li>
+              <li class="mr-3">
+                <a class="inline-block py-2 px-4 text-white no-underline" href="contact.html">Contact</a>
+              </li>
+              <li class="mr-3">
+                <a class="inline-block py-2 px-4 text-white no-underline" href="prayerrequest.html">Prayer request</a>
+              </li>
+              <div class="dropdown inline-block relative">
+                <button class="bg-gray-300 text-gray-700 font-semibold py-2 px-4 rounded inline-flex items-center">
+                  <span class="mr-1">Seed /offering /Tithe
+                  </span>
+                  <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                    <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                  </svg>
+                </button>
+                <ul class="dropdown-menu absolute hidden text-gray-700 pt-1">
+                  <li class=""><a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                      href="seed.html">GPay /Paytm /PhonePe</a></li>
+                  <li class=""><a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                      href="gateway.html">Debit card /PayPal /Visa</a></li>
+    
+                </ul>
+              </div>
+    
+          </div>
+          <!--
+          <li class="mr-3">
+          <a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4" href="#">link</a>
+          </li>
+          <li class="mr-3">
+          <a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4" href="#">link</a>
+          </li>
+          <li class="mr-3">
+          <a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4" href="#">link</a>
+          </li>-->
+          </ul>
+        </div>
+        </div>
+      </nav><br><br><br><br>
+<div class="container">
+  
+  <div id="myCarousel" class="carousel slide">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li class="item1 active"></li>
+      <li class="item2"></li>
+      <li class="item3"></li>
+      <li class="item4"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+
+      <div class="item active">
+        <img src="2.1.jpg" alt="Chania" width="460" height="345">
+        <div class="carousel-caption">
+          <h3>Chania</h3>
+          <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="2.2.jpg" alt="Chania" width="460" height="345">
+        <div class="carousel-caption">
+          <h3>Chania</h3>
+          <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+        </div>
+      </div>
+    
+      <div class="item">
+        <img src="2.3.jpg" alt="Flower" width="460" height="345">
+        <div class="carousel-caption">
+          <h3>Flowers</h3>
+          <p>Beautiful flowers in Kolymbari, Crete.</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="2.2.jpg" alt="Flower" width="460" height="345">
+        <div class="carousel-caption">
+          <h3>Flowers</h3>
+          <p>Beautiful flowers in Kolymbari, Crete.</p>
+        </div>
+      </div>
+  
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+<script>
+$(document).ready(function(){
+  // Activate Carousel
+  $("#myCarousel").carousel();
+    
+  // Enable Carousel Indicators
+  $(".item1").click(function(){
+    $("#myCarousel").carousel(0);
+  });
+  $(".item2").click(function(){
+    $("#myCarousel").carousel(1);
+  });
+  $(".item3").click(function(){
+    $("#myCarousel").carousel(2);
+  });
+  $(".item4").click(function(){
+    $("#myCarousel").carousel(3);
+  });
+    
+  // Enable Carousel Controls
+  $(".left").click(function(){
+    $("#myCarousel").carousel("prev");
+  });
+  $(".right").click(function(){
+    $("#myCarousel").carousel("next");
+  });
+});
+</script>
+<section class="text-gray-600 body-font">
+
+    <div class="flex flex-col sm:flex-row mt-10">
+      <div class="sm:w-1/3 text-center sm:pr-8 sm:py-8">
+        <div class="w-20 h-20 rounded-full inline-flex items-center justify-center bg-gray-200 text-gray-400">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            class="w-10 h-10" viewBox="0 0 24 24">
+            <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+        </div>
+        <div class="flex flex-col items-center text-center justify-center">
+          <h2 class="font-medium title-font mt-4 text-gray-900 text-lg"><b>Ps. Pradeep Rao<br>
+              (President & Founder)<br>
+              God's Fire Fellowship Trust
+            </b></h2>
+          <div class="w-12 h-1 bg-indigo-500 rounded mt-2 mb-4"></div>
+          <p class="text-base">Raclette knausgaard hella meggs normcore williamsburg enamel pin
+            sartorial venmo tbh hot chicken gentrify portland.</p>
+        </div>
+      </div>
+      <div
+        class="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
+        <p class="leading-relaxed text-lg mb-4">Ps Pastor Rao, senior Pastor and overseer of God's Fire Fellowship
+          Trust (GFFT), India. He was born in a non-believer family, and while pursuing truth he came to know about
+          Jesus in the year 2000. His life was involved in all types of intoxicants but, after encountering with Jesus
+          his life changed and he fully dedicated his life to Him. For 7 years he served God as a believer and finally
+          in 2007 he began his service in a village church and continued there for next five years. Besides in 2008 by
+          the grace of God he also started his service in Kanpur Nagar which endures till date.
+          Presently Ps Pradeep Rao, is preaching the gospel and spreading the love of Jesus Christ to people.</p>
+        <a class="text-indigo-500 inline-flex items-center">
+
+          <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+    </div>
+    </div>
+  </section>
+</body>
+</html>

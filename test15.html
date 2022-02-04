@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Semantic UI</title>
+	<link href=
+"https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+		rel="stylesheet" />
+</head>
+
+<body>
+	<div style="margin-top: 100px"
+		class="ui container">
+		
+		<h2>Sidebar</h2>
+
+		<button class="ui button primary">
+			Show Menu
+		</button>
+		
+		<div class="ui left demo vertical
+				inverted sidebar labeled
+				icon menu">
+
+			<a class="item">
+				<i class="globe icon"></i>
+				Internet
+			</a>
+			<a class="item">
+				<i class="code icon"></i>
+				Coding
+			</a>
+			<a class="item">
+				<i class="phone icon"></i>
+				Help
+			</a>
+		</div>
+		<h2>Hello welcome to geeksforgeeks</h2>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"
+		integrity=
+"sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+		crossorigin="anonymous">
+	</script>
+	
+	<script src=
+"https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js">
+	</script>
+
+	<script>
+		$('button').click(function () {
+			$('.ui.sidebar').sidebar('toggle');
+		})
+	</script>
+</body>
+
+</html>

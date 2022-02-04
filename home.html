@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"/>
+  <title>God's Fire Fellowship Trust</title>
+  <link rel = " icon" href = "2.png" type = "image/x-icon" >
+  <style>.dropdown:hover .dropdown-menu {
+    display: block;
+  }</style>
+    <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    #geeks1{
+        height: 80px;
+        width: 200px;
+        background: teal;
+        display: block;
+    }</style>
+     <style>
+      .example {
+        line-height: 80px;
+        
+        display: inline-block;
+        vertical-align: middle;
+      }
+    </style>
+    
+  <link href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" rel=" stylesheet">
+  <!--Replace with your tailwind.css once created-->
+
+  <style>
+    /*Banner open/load animation*/
+    .alert-banner {
+      -webkit-animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+      animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
+
+    /*Banner close animation*/
+    .alert-banner input:checked~* {
+      -webkit-animation: slide-out-top 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+      animation: slide-out-top 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    }
+
+    /*Footer open/load animation*/
+    .alert-footer {
+      -webkit-animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+      animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
+
+    /*Footer close animation*/
+    .alert-footer input:checked~* {
+      -webkit-animation: slide-out-bottom 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+      animation: slide-out-bottom 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    }
+
+    /*Toast open/load animation*/
+    .alert-toast {
+      -webkit-animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+      animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
+
+    /*Toast close animation*/
+    .alert-toast input:checked~* {
+      -webkit-animation: fade-out-right 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+      animation: fade-out-right 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
+
+    /* -------------------------------------------------------------
+	 * Animations generated using Animista * w: http://animista.net, 
+	 * ---------------------------------------------------------- */
+
+    @-webkit-keyframes slide-in-top {
+      0% {
+        -webkit-transform: translateY(-1000px);
+        transform: translateY(-1000px);
+        opacity: 0
+      }
+
+      100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1
+      }
+    }
+
+    @keyframes slide-in-top {
+      0% {
+        -webkit-transform: translateY(-1000px);
+        transform: translateY(-1000px);
+        opacity: 0
+      }
+
+      100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1
+      }
+    }
+
+    @-webkit-keyframes slide-out-top {
+      0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1
+      }
+
+      100% {
+        -webkit-transform: translateY(-1000px);
+        transform: translateY(-1000px);
+        opacity: 0
+      }
+    }
+
+    @keyframes slide-out-top {
+      0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1
+      }
+
+      100% {
+        -webkit-transform: translateY(-1000px);
+        transform: translateY(-1000px);
+        opacity: 0
+      }
+    }
+
+    @-webkit-keyframes slide-in-bottom {
+      0% {
+        -webkit-transform: translateY(1000px);
+        transform: translateY(1000px);
+        opacity: 0
+      }
+
+      100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1
+      }
+    }
+
+    @keyframes slide-in-bottom {
+      0% {
+        -webkit-transform: translateY(1000px);
+        transform: translateY(1000px);
+        opacity: 0
+      }
+
+      100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1
+      }
+    }
+
+    @-webkit-keyframes slide-out-bottom {
+      0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1
+      }
+
+      100% {
+        -webkit-transform: translateY(1000px);
+        transform: translateY(1000px);
+        opacity: 0
+      }
+    }
+
+    @keyframes slide-out-bottom {
+      0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1
+      }
+
+      100% {
+        -webkit-transform: translateY(1000px);
+        transform: translateY(1000px);
+        opacity: 0
+      }
+    }
+
+    @-webkit-keyframes slide-in-right {
+      0% {
+        -webkit-transform: translateX(1000px);
+        transform: translateX(1000px);
+        opacity: 0
+      }
+
+      100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1
+      }
+    }
+
+    @keyframes slide-in-right {
+      0% {
+        -webkit-transform: translateX(1000px);
+        transform: translateX(1000px);
+        opacity: 0
+      }
+
+      100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1
+      }
+    }
+
+    @-webkit-keyframes fade-out-right {
+      0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1
+      }
+
+      100% {
+        -webkit-transform: translateX(50px);
+        transform: translateX(50px);
+        opacity: 0
+      }
+    }
+
+    @keyframes fade-out-right {
+      0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1
+      }
+
+      100% {
+        -webkit-transform: translateX(50px);
+        transform: translateX(50px);
+        opacity: 0
+      }
+    }
+  </style>
+  <link href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" rel=" stylesheet">
+  <style>
+    #loader {
+        border: 12px solid #f3f3f3;
+        border-radius: 50%;
+        border-top: 12px solid #444444;
+        width: 70px;
+        height: 70px;
+        animation: spin 1s linear infinite;
+    }
+      
+    @keyframes spin {
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+      
+    .center {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+</style>
+
+
+	<style>
+	
+		/* Head banner team */
+		.banner {
+			text-align: center;
+			width: 300px; ;
+		}
+		
+		h1 {
+			color: green;
+		}
+	
+		/* styling sidebar */
+		.sidehoverbar a {
+			background-color: grey;
+			position: absolute;
+			font-size: 22px;
+			text-decoration: none;
+			Color: white;
+			padding: 10px;
+			border-radius: 0px 50px 50px 0px;
+			right: -190px;
+			transition: 0.5s;
+			opacity: 0.5;
+		}
+	
+		/* Hover effect on sidebar */
+		.sidehoverbar a:hover {
+			right: 0px;
+			opacity: 1;
+			background-color: #4CAF50;
+		}
+	
+		/* float icons*/
+		.sidehoverbar i {
+			float:left;
+		}
+	
+		/* defining position of each nav bar */
+		.article {
+			top: 100px;
+			width: 10px;
+			height: 30px;
+		}
+		
+		.Interview {
+			top: 110px;
+			width: 210px;
+			height: 30px;
+		}
+		
+		.Scripter {
+			top: 170px;
+			width: 210px;
+			height: 30px;
+		}
+		
+		.Suggested {
+			top: 230px;
+			width: 210px;
+			height: 30px;
+		}
+		
+		.Practice {
+			top: 290px;
+			width: 210px;
+			height: 30px;
+		}
+	
+		/* content margin */
+		.hoverable-topic {
+			margin-left: 55px;
+		}
+	</style>
+   <style>
+    
+    .button {
+        margin-left: 93%;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+    }
+</style>
+  
+</head>
+
+<body>
+  <div id="loader" class="center"></div>
+  <script>
+    document.onreadystatechange = function() {
+        if (document.readyState !== "complete") {
+            document.querySelector(
+              "body").style.visibility = "hidden";
+            document.querySelector(
+              "#loader").style.visibility = "visible";
+        } else {
+            document.querySelector(
+              "#loader").style.display = "none";
+            document.querySelector(
+              "body").style.visibility = "visible";
+        }
+    };
+</script>
+  	<!--Nav-->
+	<nav class="bg-gray-800 p-2 mt-0 fixed w-full z-10 top-0">
+    <div class="container mx-auto flex flex-wrap items-center">
+    <div class="flex w-full md:w-1/2 justify-center md:justify-start text-white font-medium">
+    <a class="text-white no-underline hover:text-white hover:no-underline" href="home.html">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="home.html">
+          <div class="frame" style="height: 25px;">
+          <img src="g.svg" alt="" width="90" height="90" class="d-inline-block align-text-top">
+        </div>
+        </a>
+      </div>
+      
+      <span class="text-2xl pl-5" ; vertical-align: middle><left> <span class="example">Gods Fire Fellowship Trust</span></left></span>
+    </a>
+        </div>
+  <div class="flex w-full pt-2 content-center justify-between md:w-1/2 md:justify-end">
+    <ul class="list-reset flex justify-between flex-1 md:flex-none items-center">
+      <li class="mr-3">
+      <a class="inline-block py-2 px-4 text-white no-underline" href="home.html">Home</a>
+      </li>
+      <li class="mr-3">
+        <a class="inline-block py-2 px-4 text-white no-underline" href="Aboutus.html">About Us</a>
+        </li>
+        <li class="mr-3">
+          <a class="inline-block py-2 px-4 text-white no-underline" href="Sermon.html">Sermon</a>
+          </li>
+          <li class="mr-3">
+            <a class="inline-block py-2 px-4 text-white no-underline" href="testimony.html">Testimony</a>
+            </li>
+            <li class="mr-3">
+              <a class="inline-block py-2 px-4 text-white no-underline" href="contact.html">Contact</a>
+              </li>
+              <li class="mr-3">
+                <a class="inline-block py-2 px-4 text-white no-underline" href="prayerrequest.html">Prayer request</a>
+                </li>
+                <div class="dropdown inline-block relative">
+                  <button class="bg-gray-300 text-gray-700 font-semibold py-2 px-4 rounded inline-flex items-center">
+                    <span class="mr-1">Seed /offering /Tithe
+                    </span>
+                    <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
+                  </button>
+                  <ul class="dropdown-menu absolute hidden text-gray-700 pt-1">
+                    <li class=""><a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="seed.html">GPay /Paytm /PhonePe</a></li>
+                    <li class=""><a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="gateway.html">Debit card /PayPal /Visa</a></li>
+                    
+                  </ul>
+                </div>
+              
+              </div><!--
+      <li class="mr-3">
+      <a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4" href="#">link</a>
+      </li>
+      <li class="mr-3">
+      <a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4" href="#">link</a>
+      </li>
+      <li class="mr-3">
+      <a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4" href="#">link</a>
+      </li>-->
+    </ul>
+  </div>
+    </div>
+</nav><br><br><br><br>
+ </header>
+    <div>
+      <p class="p-2 w-9/12">
+            
+      </p>
+    </div>
+    <header
+      class="bg-green-700
+             text-3xl text-white text-center
+             border-t-4 border-red-500
+             fixed
+             inset-x-0
+             top-0
+             p-4">
+      This is sticky fixed Footer.
+</header>
+<div class="bg-indigo-900 text-center py-4 lg:px-4">
+  <div class="p-2 bg-indigo-800 items-center text-indigo-100 leading-none lg:rounded-full flex lg:inline-flex" role="alert">
+    <span class="flex rounded-full bg-indigo-500 uppercase px-2 py-1 text-xs font-bold mr-3">Shalom!</span>
+    <span class="font-semibold mr-2 text-left flex-auto">Welcome to the family of God's Fire Fellowship Trust.</span>
+    <svg class="fill-current opacity-75 h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
+  </div>
+</div>
+
+  <section class="text-gray-600 body-font">
+    <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+      
+      <div
+        class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">The thief comes only to steal and
+          kill and destroy;
+          <br class="hidden lg:inline-block">I have come that they may have life, and have it to the full.
+        </h1>
+        <p class="mb-8 leading-relaxed">John 10 :10 </p>
+        <div class="flex justify-center">
+          
+              <button class="bg-transparent hover:bg-blue-500 text-black-700 font-semibold hover:text-white py-2 px-8 border border-black-500 hover:border-transparent rounded">
+                <a href="https://wa.me/917307798110"><i class="fa fa-whatsapp" style="font-size:24px;color: green"></i>&nbsp;&nbsp;Contact us on Whatsapp</a>
+              </button>
+           
+        </div>
+      </div>
+      <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+        <img src="1.jpg">
+      </div>
+    </div>
+  </section>
+  
+  <section class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-wrap -m-4">
+        <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
+          <div class="h-full text-center">
+            <img alt="testimonial"
+              class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100"
+              src="https://source.unsplash.com/302x302/?nature">
+            <p class="leading-relaxed">Edison bulb retro cloud bread echo park, helvetica stumptown taiyaki taxidermy
+              90's cronut +1 kinfolk. Single-origin coffee ennui shaman taiyaki vape DIY tote bag drinking vinegar
+              cronut adaptogen squid fanny pack vaporware.</p>
+            <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
+            <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">Person 1</h2>
+            <p class="text-gray-500">Healed from Cancer</p>
+          </div>
+        </div>
+        <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
+          <div class="h-full text-center">
+            <img alt="testimonial"
+              class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100"
+              src="https://source.unsplash.com/300x300/?waterfall">
+            <p class="leading-relaxed">Edison bulb retro cloud bread echo park, helvetica stumptown taiyaki taxidermy
+              90's cronut +1 kinfolk. Single-origin coffee ennui shaman taiyaki vape DIY tote bag drinking vinegar
+              cronut adaptogen squid fanny pack vaporware.</p>
+            <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
+            <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">Person 2</h2>
+            <p class="text-gray-500">Healed from AIDS</p>
+          </div>
+        </div>
+        <div class="lg:w-1/3 lg:mb-0 p-4">
+          <div class="h-full text-center">
+            <img alt="testimonial"
+              class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100"
+              src="https://source.unsplash.com/305x305/?hills">
+            <p class="leading-relaxed">Edison bulb retro cloud bread echo park,</p>
+            <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
+            <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">Person 3</h2>
+            <p class="text-gray-500">Healeed from leprosy</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="text-gray-600 body-font relative">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-col text-center w-full mb-12">
+        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">SIGN UP FOR ALL THE UPDATES</h1>
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Your find all the events and special announcement in your
+          inbox</p>
+      </div>
+      <div class="lg:w-1/2 md:w-2/3 mx-auto">
+        <div class="flex flex-wrap -m-2">
+          <div class="p-2 w-1/2">
+            <div class="relative">
+              <label for="name" class="leading-7 text-sm text-gray-600">Name</label>
+              <input type="text" id="name" name="name"
+                class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+            </div>
+          </div>
+          <div class="p-2 w-1/2">
+            <div class="relative">
+              <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
+              <input type="email" id="email" name="email"
+                class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+            </div>
+          </div>
+          <div class="p-2 w-full">
+            <div class="relative">
+
+            </div>
+          </div>
+          <div class="p-2 w-full">
+            
+              <center><button class="bg-transparent hover:bg-blue-500 text-black-700 font-semibold hover:text-white py-2 px-8 border border-black-500 hover:border-transparent rounded">
+                <a href="reply1.html"><i class="fa fa-paper-plane" style="font-size:24px"></i>&nbsp;&nbsp;Submit</a>
+              </button>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;<a  href="mailto: godsfirefellowshiptrust@gmail.com "   target="_blank"><i class="fa fa-envelope"style="font-size:24px"></i></center></a>
+          </div>
+          
+          
+
+          </div>
+        </div>
+      </div>
+  </section>
+  <div class="bg-fixed background-attachment: fixed;" style="background-image: url(bg.jpeg)">
+  <footer class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-wrap md:text-left text-center -mb-10 -mx-4">
+       
+        <div class="lg:w-1/6 md:w-1/2 w-full px-4">
+          <h1 style="color:white;">IMPORTANT LINKS</h1><br>
+          <nav class="list-none mb-10">
+            <li>
+              <a style="color:white;" href="Contact.html">Contact Us</a>
+            </li>
+            <li>
+              <a style="color:white;"href="prayerrequest.html">Prayer Request</a>
+            </li>
+            <li>
+              <a style="color:white;"href="FAQ.html">FAQs</a>
+            </li>
+           
+            <li>
+              <a style="color:white;"href="Sermon.html">Sermons</a>
+            </li>
+            <li>
+              <a style="color:white;"href="testimony.html">Testimonials</a>
+            </li>
+          </nav>
+        </div>
+        <div class="lg:w-1/6 md:w-1/2 w-full px-4">
+          <h1 style="color:white;">SIMPLE WAYS TO DONATE</h1><br>
+          <nav class="list-none mb-10">
+            <li>
+              <a style="color:white;" href="seed.html">UPI / paytm / Google pay</a>
+            </li>
+            <li>
+              <a style="color:white;" href="gateway.html">Visa / paypal / Debitcard</a>
+            </li>
+            <li>
+              <a style="color:white;" href="pp.html">Privacy Policy</a>
+            </li>
+          </nav>
+        </div>
+        <div class="lg:w-1/6 md:w-1/2 w-full px-4">
+          <h1 style="color:white;">SIMPLE WAYS TO CONTACT US</h1><br>
+          <nav class="list-none mb-10">
+            <li>
+              <a style="color:white;" href="https://wa.me/917307798110"><i class="fa fa-whatsapp"style=" font-size: 24px "></i>  WhatsApp</a>
+            </li>
+            <li>
+              <a style="color:white;" href="https://www.facebook.com/Gods-FIRE-Fellowship-296377880379740/"><i class="fa fa-facebook-f" style=" font-size: 24px "></i>           Facebook</a>
+            </li>
+            <li>
+              <a style="color:white;" href="mailto: godsfirefellowshiptrust@gmail.com "><i class="fa fa-envelope"style="font-size:24px "></i> Mail</a>
+            </li>
+            
+            
+          </nav>
+        </div>
+        <div class="lg:w-6/6 md:w-1/2 w-full px-4">
+          <h1 style="color:white;text-align:center;font-size:130%;">ABOUT THE CHURCH</h1><br>
+          <nav class="list-none mb-10">
+            <li>
+              <a style="color:white;" href="Contact.html"><p>The God's Fire Fellowship Trust Church is a living church full of signs and wonders and the holy fire of our lord and savior Jesus Christ. Pastor Pradeep Rao is the senior pastor and overseer of The God's Fire Fellowship Trust Church.The church has now become a congregation of hundreds of people.</p></a>
+            </li></nav>
+          </div>
+          <p style="color:white;">You can now get our church app  on google play store.</p><p>&emsp;</p><p>&emsp;</p><br>
+          <button
+          class="bg-gray-100 inline-flex py-3 px-5 rounded-lg items-center hover:bg-gray-200 focus:outline-none">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6"
+              viewBox="0 0 512 512">
+              <path
+                  d="M99.617 8.057a50.191 50.191 0 00-38.815-6.713l230.932 230.933 74.846-74.846L99.617 8.057zM32.139 20.116c-6.441 8.563-10.148 19.077-10.148 30.199v411.358c0 11.123 3.708 21.636 10.148 30.199l235.877-235.877L32.139 20.116zM464.261 212.087l-67.266-37.637-81.544 81.544 81.548 81.548 67.273-37.64c16.117-9.03 25.738-25.442 25.738-43.908s-9.621-34.877-25.749-43.907zM291.733 279.711L60.815 510.629c3.786.891 7.639 1.371 11.492 1.371a50.275 50.275 0 0027.31-8.07l266.965-149.372-74.849-74.847z">
+              </path>
+          </svg>
+          <span class="ml-4 flex items-start flex-col leading-none">
+            <a href="https://play.google.com/store/apps/details?id=com.microsoft.office.officehubrow&hl=en_IN&gl=US">
+              <span class="text-xs text-gray-600 mb-1">GET IT ON</span>
+              <span class="title-font font-medium"><a href="https://play.google.com/store/apps/details?id=com.microsoft.office.officehubrow&hl=en_IN&gl=US">Google Play</a></span>
+          </span>
+      </button>
+      </div></div>
+
+  
+  <div class="bg-gray-100">
+    <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+      <p class="text-gray-500 text-sm text-center sm:text-left">© Copyright 2021 Gods Fire Fellowship Trust —
+        <a href="https://www.twitter.com/pspradeeprao1/" class="text-gray-600 ml-1" target="_blank" rel="noopener noreferrer">@Ps
+          Pradeep Rao</a>
+      </p>
+      <span class="sm:ml-auto sm:mt-0 mt-2 sm:w-auto w-full sm:text-left text-center text-gray-500 text-sm">
+        <span class="inline-flex lg:ml-auto lg:mt-0 mt-6 w-full justify-center md:justify-start md:w-auto">
+        
+          <a href="https://www.facebook.com/Gods-FIRE-Fellowship-296377880379740/">
+            <i class="fa fa-facebook-f" style=" font-size: 24px "></i>
+          </a>
+        
+          <p>&emsp;</p>
+          <a href="https://www.twitter.com/pspradeeprao1/">
+            <i class="fa fa-twitter"style=" font-size: 24px "></i>
+      </a>
+      <p>&emsp;</p>
+        
+        <a href="https://www.instagram.com/ps.pradeeprao/">
+          <i class="fa fa-instagram" style=" font-size: 24px "></i>
+        </a>
+        <p>&emsp;</p>
+     <a href="https://www.youtube.com/channel/UCnwzgxJAG_qyxyspAVmxPmA"> <i class="fa fa-youtube-play"style=" font-size: 24px "></i></a>
+     <p>&emsp;</p>
+     <a href="https://wa.me/917307798110"> <i style=" font-size: 24px " class="fa fa-whatsapp"></i></a>
+     <p>&emsp;</p>
+     <a  href="mailto: godsfirefellowshiptrust@gmail.com "   target="_blank"><i class="fa fa-envelope"style="font-size:24px "></i></a>
+    </span>
+  </div>
+</div>
+      </span>
+    </div>
+  </div>
+  
+  </footer>
+</div>
+</body>
+
+</html>
